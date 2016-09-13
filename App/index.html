@@ -1,0 +1,54 @@
+<!-- 
+* Author: Philip Grogan	
+* Assignment: WE4.1 To-do List Mobile Web Application, Digital Skills Academy	
+* Date:	2016/09/01	
+* Ref: http://stackoverflow.com/questions/21736490/angularjs-1-2-storing-data-arrays-in-services
+* Public-page: https://build.phonegap.com/apps/2257048/share
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<title>Philip's To Do List</title>
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+
+            <div id="title-bar"><h1>Philip's To-do List App</h1></div>
+
+            <div id="container">
+
+
+<h2>You Have <span>{{getTotalTodos()}}</span> Things To Do</h2>
+
+<form ng-submit="todoAdd()">
+    <input class="box" type="text" ng-model="todoInput" size="50" placeholder="Add a new item to list">
+    <input type="submit" value="Add a new item">
+</form>
+
+<br>
+
+<h2 class="items">Your <span>{{getTotalTodos()}}</span> things to do are:</h2>
+
+<div ng-repeat="x in todoList">
+
+    <div class="spacers-line">
+    	<input type="checkbox" ng-model="x.done" class="spacers"> 
+    	<span ng-bind="x.todoText"></span>
+    </div><!-- ends .spacers-line -->
+
+</div><!-- ends x in todoList -->
+
+<p><button ng-click="remove()" class="remove">Remove checked items</button></p>
+
+                </div><!-- end #container -->
+
+
+<script type="text/javascript" src="controller.js"></script>
+
+
+</body>
+</html>

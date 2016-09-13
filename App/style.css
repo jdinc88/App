@@ -1,0 +1,125 @@
+/*
+* Author: Philip Grogan	
+* Assignment: WE4.1 To-do List Mobile Web Application, Digital Skills Academy	
+* Date:	2016/09/03	
+* Public-page: https://build.phonegap.com/apps/2257048/share
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', arial;
+	font-size: 100%;
+	color: #444;
+	background: #fff;
+}
+
+h1 {
+	font-size: 130%;
+	font-weight: normal;
+	margin: 0;
+}
+
+.items {
+	color: #4074f6;
+	font-size: 120%;
+}
+
+#title-bar {
+	max-width: 650px;
+	padding: 2%;
+	font-size: 140%;
+	color: #fff;
+	background: #4074f6;
+	border-bottom: 3px solid #000;
+	margin: 0 auto;
+}
+
+#container {
+	max-width: 650px;
+	background: #eee;
+	padding: 1% 2%;
+	border-bottom: 3px solid #4074f6;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+input {
+	background: #fff;
+	color: #444;
+	border: 1px solid #cfcfcf;
+	padding: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #a5a5a5; 
+}
+
+button {
+	background: #fff;
+	color: #444;
+	border: 1px solid #cfcfcf;
+	padding: 10px;
+}
+
+input:hover, button:hover {
+	cursor: pointer;
+	background: #e2e2e2;
+}
+
+.box {
+	background: #fff;
+}
+
+.box:hover {
+	cursor: text;
+	background: #fff;
+}
+
+.remove {
+	width: 200px;
+	border: 1px solid #bbb;
+	border-radius: 7px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.spacers {
+	margin: 18px 5px;
+}
+
+.spacers-line {
+	padding: 1% 2% 1% 2% ;
+	margin-bottom: 1%;
+	background: #fff;
+	border: 1px solid #cfcfcf;
+}
+
+.nav, .pagination, .carousel, .panel-title a { 
+	cursor: pointer; 
+}
+
+
+
+@media all and (max-width : 768px) {
+
+h1 {
+	font-size: 117%;
+}
+
+#container {
+	width: 90%;
+ }
+
+ #title-bar {
+ 	width: 90%;
+ 	padding: 5% 2%;
+ }
+
+ .box {
+ 	width: 90%;
+ 	margin-bottom: 2%;
+ }
+}
